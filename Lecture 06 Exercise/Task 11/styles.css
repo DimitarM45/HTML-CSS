@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section.card {
+    width: 20em;
+    display: block; 
+    overflow: hidden;
+    border-radius: 0.2em;
+    border: 1px solid #CCC;
+    margin: auto;
+    position: relative;
+}
+
+div img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div:last-child {
+    padding: 1.5em;
+}
