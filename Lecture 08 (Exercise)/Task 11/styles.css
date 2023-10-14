@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    min-height: 100vh;
+    font: 16px/1.5 Arial, sans-serif;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.title {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.title-flex {
+    min-width: 100%
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.4em;
+    overflow: hidden;
+    background-color: white;
+    border: 2px solid #cccccc;
+    box-shadow: 0 0 10px 0.2em rgb(0, 0, 0, 0.15);
+}
+
+.cards-layout {
+    margin: 2em auto;
+    display: flex;
+    max-width: 60em;
+    gap: 1em;
+}
+
+.card section,
+.card footer {
+    padding: 1em;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card footer {
+    border-top: 2px solid #cccccc;
+}
+
+.cards-layout.masonry {
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: top;
+    max-height: 120em;
+}
+
+.cards-layout.flex {
+    flex-flow: row wrap; 
+    align-items: top;
+}
+
+.cards-layout.flex .card {
+    flex: 0 0 300px;
+}
+
+.cards-layout.masonry .card {
+    height: auto;
+    width: 300px;
+}
+
+.cards-layout.flex .card section {
+    flex: 1 0 auto;
+}
