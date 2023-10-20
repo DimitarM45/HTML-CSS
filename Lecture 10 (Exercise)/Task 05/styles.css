@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+}
+
+h3 {
+    font-size: 20px;
+    font-style: italic;
+}
+
+article {
+    position: relative;
+    padding: 0 0 0 3em;
+}
+
+article:before { 
+    display: block;
+    content: '';
+    border: 4px solid rgb(153, 153, 153);
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+li p span {
+    font-weight: bold;
+}
+
+article header {
+    padding-bottom: 0.5em;
+}
+
+article section ul {
+    padding-left: 1.5em;
+}
+
+article section p {
+    padding-bottom: 1.5em;
+}
+
+.timeline {
+    border: 0.3rem solid rgb(153, 153, 153);
+    border-radius: 2px;
+    padding: 2em;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    border: 2px solid rgb(153, 153, 153);
+    background-color: white;
+    border-radius: 2px;
+    margin-bottom: 2em;
+    padding: 0.2em 0.7em;
+    max-width: fit-content;
+    position: relative;
+}
+
+.timeline:before {
+    display: block;
+    content: '';
+    width: 0.5em;
+    height: 100%;
+    top: 2em;
+    left: 2.475em;
+    position: absolute;
+    background: rgb(153, 153, 153);
+}
+
+article:nth-child(odd):before {
+    background-color: orange;
+}
+
+article:nth-child(even):before {
+    background-color: green;
+}
+
+@media (min-width: 600px)
+{
+    article {
+        max-width: 50%;
+        padding-bottom: 1em;
+    }
+
+    article + article {
+        margin-top: -2em;
+    }
+
+    .title {
+        margin: 1em auto;
+    }
+    
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 4em;
+    }
+    
+    .timeline:before {
+        top: 3em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    article:nth-child(even) {
+        margin-left: calc(50% - 0.75em);
+    }
+
+    article:nth-child(odd) {
+        text-align: right;
+        padding-right: 3em;
+        padding-left: 0;
+        margin-left: 0.75em;
+    }
+
+    article:nth-child(odd):before {
+        left: inherit;
+        top: 0;
+        right: 0;    
+    }
+}
