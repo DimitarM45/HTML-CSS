@@ -1,37 +1,57 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
+    display: flex;
+    padding: 0.5em;
+    flex-flow: row wrap;
+    gap: 0.5em;
+}
+
+header, main, nav, footer {
+    background-color: lightblue;
+    border-radius: 3px;
+}
+
+header, main, nav {
     padding: 1em;
 }
 
-@media (min-width: 500px) {
-    .site {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 1em;
-    }
-
-    header {
-        width: 100%;
-    }
+header {
+    flex: 1 1 100%;
 }
 
-header, .menu, .tasks {
-    padding: 2em 1em;
-    background-color: lightblue;
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    flex: 1 1 25%;
+}
+
+main {
+    flex: 1 1 70%;
+}
+
+ul {
+    padding: 1em 0 0 2em;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: purple;
 }
 
 footer {
-    padding: 0.5em;
-    background-color: lightblue;
+    padding: 0.25em 0.5em;
+    flex: 1 1 100%;
 }
 
-.site {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+@media screen and (max-width: 500px) {
+    body {
+        flex-direction: column;
+    }
 }

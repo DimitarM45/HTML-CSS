@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+section {
+    padding: 0 5em;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+hr {
+    margin: 0 auto;
+    width: 50px;
+    border: 2px solid #d01919;
+    border-radius: 2px;
+    margin-bottom: 3em;
+}
+
+ul li {
+    display: block;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section {
+    display: flex;
+    flex: 0 0 100%;
+    padding-block: 1em;
+    justify-content: space-between;
+    background-color: #d01919;
+    color: white;
+}
+
+.header-section {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url('image/fitness-main.jpg');
+    background-size: 1200;
+    background-position: center -20em;
+    min-height: 30em;
+    color: white;
+}
+
+.header-title {
+    padding: 8.5em 0;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 0.25em;
+    background-color: #d01919;
+}
+
+.header-section {
+    padding-block: 2em;
+}
+
+.welcome-section {
+    text-align: center;
+}
+
+.coach-section {
+    text-align: center;
+    background-color: #efefef;
+    padding-bottom: 5em;
+}
+
+.coach-section-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-section-cards {
+    display: flex;
+    justify-content: center;
+    min-height: 15em;
+}
+
+.coach-section h2,
+.welcome-section h2 {
+    font-size: 30px;
+    padding-block: 2em;
+}
+
+.welcome-card p {
+    margin: 0 auto;
+    max-width: 36ch;
+}
+
+.welcome-section img {
+    width: 15%;
+    height: auto;
+}
+
+.coach-section img {
+    border-radius: 0.25em;
+    margin-bottom: 1em;
+}
+
+.header-title h1 {
+    font-size: 50px;
+    letter-spacing: 10px;
+    padding-bottom: 1em;
+}
+
+.header-title p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 54ch;
+    padding-bottom: 2em;
+}
+
+.header-title a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #d01919;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+}
+
+.top-section ul {
+    gap: 0.5em;
+}
+
+.top-section ul li a span {
+    display: none;
+}
+
+.coach-section-cards .coach-card,
+.welcome-section-cards .welcome-card {
+    flex: 1 1 30%;
+}
+
+.welcome-card .welcome-card-body h3 {
+    padding: 1em 0;
+    color: #d01919;
+}
+
+.coach-card .coach-card-body h3 {
+    padding-bottom: 1em;
+}
+
+.coach-card .coach-card-body h4 {
+    padding-bottom: 1em;
+    color: #d01919;
+}
+
+.coach-card .coach-card-body p {
+    margin: 0 auto;
+    max-width: 30ch;
+    color: #a6a8bf;
+}
+
+.header-section .header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-section .header nav ul {
+    gap: 5em;
+}
